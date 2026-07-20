@@ -5,12 +5,13 @@ Marketplace privado de plugins de Claude Code para la Digital Transformation Off
 ## Plugins disponibles
 
 ### `dto-tools`
-Cuatro skills para el ciclo de trabajo del DTO:
+Cinco skills para el ciclo de trabajo del DTO:
 
 - **problem-definition** — entrevista estructurada para definir un problema de negocio (evidence-based, cause-free, solution-free) antes de proponer solución.
 - **demand-intake** — registra una demanda nueva, la redacta en formato corporativo y genera un PDF con marca Amcor.
 - **change-readiness-assessment** — evalúa la preparación de un equipo frente a un cambio usando el framework ADKAR, con scoring y reporte PDF.
-- **projects-list** — lee la base de Notion compartida del DTO y genera un resumen ejecutivo del portfolio de demandas.
+- **projects-list** — lee la base de Notion compartida del DTO y genera un listado simple de demandas (título, fecha de creación, owner, status y descripción de una línea).
+- **list-projects** — lee la misma base de Notion y genera una tabla de resumen ejecutivo del portfolio (ID, iniciativa, estado y una descripción de una línea sintetizando problema y beneficio esperado).
 
 ### `lss-green-belt`
 Skills para el ciclo de trabajo de Lean Six Sigma Green Belt (DMAIC):

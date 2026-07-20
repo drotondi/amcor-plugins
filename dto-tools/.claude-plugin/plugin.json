@@ -1,7 +1,7 @@
 {
   "name": "dto-tools",
-  "version": "1.0.0",
-  "description": "Herramientas de la Digital Transformation Office (DTO) de Amcor: definición de problemas, intake de demandas, evaluación de change readiness (ADKAR) y resumen ejecutivo de proyectos.",
+  "version": "1.2.0",
+  "description": "Herramientas de la Digital Transformation Office (DTO) de Amcor: definición de problemas, intake de demandas, evaluación de change readiness (ADKAR), listado de proyectos y resumen ejecutivo del portfolio.",
   "author": {
     "name": "Damian Rotondi",
     "email": "damian.rotondi@amcor.com"
@@ -14,7 +14,8 @@
       "skills/problem-definition/SKILL.md",
       "skills/demand-intake/SKILL.md",
       "skills/change-readiness-assessment/SKILL.md",
-      "skills/projects-list/SKILL.md"
+      "skills/projects-list/SKILL.md",
+      "skills/list-projects/SKILL.md"
     ]
   }
 }
