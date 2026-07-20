@@ -13,7 +13,11 @@ Cuatro skills para el ciclo de trabajo del DTO:
 - **projects-list** — lee la base de Notion compartida del DTO y genera un resumen ejecutivo del portfolio de demandas.
 
 ### `lss-green-belt`
-Skills para el ciclo de trabajo de Lean Six Sigma Green Belt (DMAIC). Todavía sin skills — se irán agregando en `lss-green-belt/skills/`.
+Skills para el ciclo de trabajo de Lean Six Sigma Green Belt (DMAIC):
+
+- **gb-coach** — Master Black Belt virtual que hace de mentor: revisa en formato tollgate si el approach del candidato en cada fase DMAIC (Define/Measure/Analyze/Improve/Control) es sólido antes de avanzar, con veredicto Go / Go con condiciones / No-Go.
+- **define-charter** — arma el project charter de la fase Define: problema, alcance, VOC/CTQs, SIPOC, equipo y business case, con reporte PDF con marca Amcor.
+- **analyze-root-cause** — entrevista estructurada de causa raíz (5 Whys / Ishikawa / Pareto) y recomienda qué test estadístico usar según el tipo de dato (t-test, ANOVA, chi-cuadrado, etc.).
 
 ## Instalación
 

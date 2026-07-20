@@ -1,7 +1,7 @@
 {
   "name": "lss-green-belt",
-  "version": "0.1.0",
-  "description": "Herramientas para el ciclo de trabajo de Lean Six Sigma Green Belt: definición, medición, análisis, mejora y control (DMAIC).",
+  "version": "0.2.0",
+  "description": "Herramientas para el ciclo de trabajo de Lean Six Sigma Green Belt: coaching de tollgates, project charter y análisis de causa raíz (DMAIC).",
   "author": {
     "name": "Damian Rotondi",
     "email": "damian.rotondi@amcor.com"
@@ -10,6 +10,10 @@
   "license": "UNLICENSED",
   "keywords": ["lss", "green-belt", "lean-six-sigma", "dmaic", "amcor"],
   "components": {
-    "skills": []
+    "skills": [
+      "skills/gb-coach/SKILL.md",
+      "skills/define-charter/SKILL.md",
+      "skills/analyze-root-cause/SKILL.md"
+    ]
   }
 }
