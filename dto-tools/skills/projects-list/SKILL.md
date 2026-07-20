@@ -18,13 +18,14 @@ Use `notion-search` or `notion-fetch` to locate the "DTO - Demandas" database. I
 
 Use `notion-query-data-sources` (or `notion-query-database-view`) to pull all rows. If the user's request implies a filter — a specific requester, sponsor, status, or type ("las demandas de Fulano", "las que están en desarrollo") — apply that filter in the query rather than pulling everything and filtering in prose.
 
-### Step 2: Build one executive summary per demand
+### Step 2: Build a single table with one row per demand
 
-For each row, produce a compact executive summary (not a re-dump of every field) with this shape:
+Produce one table listing every demand, one row per initiative. Columns:
 
-- **Title line**: ID + requirement name + current status (e.g. "**DTO-2026-003 — Automatización de facturación** (En desarrollo)")
-- **2-4 sentence summary** synthesizing, in your own words: what problem it solves, what the solution/scope is, and the expected benefit or goal — pull this from Problema, Necesidad, Alcance, Beneficios, and Meta, but compress into a tight paragraph rather than listing each field separately.
-- **One line of metadata**: Solicitado por, Sponsor, Líder de IT, Proceso de negocio — as a compact inline line, not a table, unless the user asks for a table.
+- **ID**
+- **Iniciativa** (requirement name)
+- **Estado**
+- **Descripción**: a single, tightly compressed line (max ~1 sentence, no line breaks) synthesizing in your own words what problem it solves and the expected benefit/goal — pull from Problema, Necesidad, Alcance, Beneficios, and Meta, but compress hard, don't list each field.
 
 Keep each demand's summary short enough that a director can scan 10+ of them in one pass — this is a portfolio view, not the full intake report (that's what the PDF from `demand-intake` is for).
 
