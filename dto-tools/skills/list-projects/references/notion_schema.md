@@ -1,6 +1,6 @@
 # Notion schema — "DTO - Demandas" database
 
-This is the single shared database that backs both the `demand-intake` skill (writes) and the `projects-list` skill (reads). Both skills must agree on this exact name and property set — do not create a second database with a similar name.
+This is the single shared database that backs both the `demand-intake` skill (writes) and the `list-projects` skill (reads). Both skills must agree on this exact name and property set — do not create a second database with a similar name.
 
 **Database name (Notion page title):** `DTO - Demandas`
 
@@ -23,7 +23,7 @@ This is the single shared database that backs both the `demand-intake` skill (wr
 | Beneficios | Rich text | Polished version |
 | Impactos y riesgos | Rich text | Polished version |
 | Meta | Rich text | Polished version |
-| Estado | Select | Options: `Nueva`, `En análisis`, `En desarrollo`, `Completada`, `Descartada` — default to `Nueva` on creation; `projects-list` reads this but does not write it |
+| Estado | Select | Options: `Nueva`, `En análisis`, `En desarrollo`, `Completada`, `Descartada` — default to `Nueva` on creation; `list-projects` reads this but does not write it |
 
 ## Creating the database (if it doesn't exist)
 
@@ -32,5 +32,4 @@ Use `notion-create-database` with SQL DDL syntax (per the Notion MCP tool's own 
 ## Querying
 
 - `demand-intake` queries only to count existing IDs for the current year (to assign the next sequential number).
-- `projects-list` queries the full database to build executive summaries — see that skill's SKILL.md.
-- `list-projects` queries the full database to build a lighter-weight portfolio table (no overview section) — see that skill's SKILL.md.
+- `list-projects` queries the full database to build a portfolio table — see that skill's SKILL.md.
