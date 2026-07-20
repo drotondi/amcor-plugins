@@ -20,7 +20,7 @@ Use `notion-query-data-sources` (or `notion-query-database-view`) to pull all ro
 
 ### Step 2: Build a single table with one row per demand
 
-Produce one table listing every demand, one row per initiative. Columns:
+Generate one table listing every demand, one row per initiative. Columns:
 
 - **ID**
 - **Iniciativa** (requirement name)
