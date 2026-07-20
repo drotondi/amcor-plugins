@@ -32,5 +32,5 @@ Use `notion-create-database` with SQL DDL syntax (per the Notion MCP tool's own 
 ## Querying
 
 - `demand-intake` queries only to count existing IDs for the current year (to assign the next sequential number).
-- `projects-list` queries the full database to build a simple per-demand list — see that skill's SKILL.md.
-- `list-projects` queries the full database to build a portfolio executive-summary table — see that skill's SKILL.md.
+- `projects-list` queries the full database to build executive summaries — see that skill's SKILL.md.
+- `list-projects` queries the full database to build a lighter-weight portfolio table (no overview section) — see that skill's SKILL.md.
