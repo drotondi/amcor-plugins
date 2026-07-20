@@ -14,8 +14,8 @@
     {
       "name": "lss-green-belt",
       "source": "./lss-green-belt",
-      "description": "Herramientas para el ciclo de trabajo de Lean Six Sigma Green Belt: definición, medición, análisis, mejora y control (DMAIC).",
-      "version": "0.1.0"
+      "description": "Herramientas para el ciclo de trabajo de Lean Six Sigma Green Belt: coaching de tollgates, project charter y análisis de causa raíz (DMAIC).",
+      "version": "0.2.0"
     }
   ]
 }
