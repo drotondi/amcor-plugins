@@ -10,6 +10,12 @@
       "source": "./dto-tools",
       "description": "Herramientas de la Digital Transformation Office (DTO) de Amcor: definición de problemas, intake de demandas, evaluación de change readiness (ADKAR) y resumen ejecutivo de proyectos.",
       "version": "1.0.0"
+    },
+    {
+      "name": "lss-green-belt",
+      "source": "./lss-green-belt",
+      "description": "Herramientas para el ciclo de trabajo de Lean Six Sigma Green Belt: definición, medición, análisis, mejora y control (DMAIC).",
+      "version": "0.1.0"
     }
   ]
 }

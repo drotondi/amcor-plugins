@@ -12,11 +12,15 @@ Cuatro skills para el ciclo de trabajo del DTO:
 - **change-readiness-assessment** — evalúa la preparación de un equipo frente a un cambio usando el framework ADKAR, con scoring y reporte PDF.
 - **projects-list** — lee la base de Notion compartida del DTO y genera un resumen ejecutivo del portfolio de demandas.
 
+### `lss-green-belt`
+Skills para el ciclo de trabajo de Lean Six Sigma Green Belt (DMAIC). Todavía sin skills — se irán agregando en `lss-green-belt/skills/`.
+
 ## Instalación
 
 ```
 /plugin marketplace add drotondi/claude-plugins
 /plugin install dto-tools@amcor-dto-marketplace
+/plugin install lss-green-belt@amcor-dto-marketplace
 ```
 
 ## Actualizar el plugin

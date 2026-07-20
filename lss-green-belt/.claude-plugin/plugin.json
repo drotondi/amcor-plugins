@@ -1,0 +1,15 @@
+{
+  "name": "lss-green-belt",
+  "version": "0.1.0",
+  "description": "Herramientas para el ciclo de trabajo de Lean Six Sigma Green Belt: definición, medición, análisis, mejora y control (DMAIC).",
+  "author": {
+    "name": "Damian Rotondi",
+    "email": "damian.rotondi@amcor.com"
+  },
+  "homepage": "https://github.com/drotondi/claude-plugins/tree/main/lss-green-belt",
+  "license": "UNLICENSED",
+  "keywords": ["lss", "green-belt", "lean-six-sigma", "dmaic", "amcor"],
+  "components": {
+    "skills": []
+  }
+}
