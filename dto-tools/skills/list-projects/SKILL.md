@@ -39,5 +39,5 @@ If the user asks for something to share (a deck, a doc) or the table is long (15
 
 - This skill is read-only against Notion — it never creates, edits, or deletes demand records.
 - If the Notion connector isn't available or the query fails, say so plainly rather than presenting stale or invented data.
-- This skill overlaps closely with `projects-list` — both build a very similar ID/Iniciativa/Estado/Descripción portfolio table from the same database. The difference: `projects-list` always adds a portfolio-level overview (totals, breakdown by Estado/Tipo, anomaly flags) after the table; `list-projects` keeps the deliverable to just the table itself, with the overview only offered as an optional document for long lists. Use whichever the user's phrasing points to; if ambiguous, the plain table here is the lighter-weight choice.
+- This is the only skill in `dto-tools` for a portfolio-level view of demands — there's no separate "simple list" skill anymore, so use this whenever the user wants any kind of overview table of what's registered.
 - Language: respond in the language the user is asking in, regardless of what language individual Notion records were written in.

@@ -76,7 +76,7 @@ Before generating the PDF or the JSON record, check that none of these are empty
 
 Generate a request ID in the form `DTO-{year}-{sequential}`, e.g. `DTO-2026-001`.
 
-Use the connected Notion MCP tools to persist the record — do not save a local JSON file, since the whole point is that any Amcor user, from any conversation, can see the same shared list of demands (this is also what the `projects-list` skill reads from).
+Use the connected Notion MCP tools to persist the record — do not save a local JSON file, since the whole point is that any Amcor user, from any conversation, can see the same shared list of demands (this is also what the `list-projects` skill reads from).
 
 Read `references/notion_schema.md` in this skill directory for the exact database name and property schema — apply it precisely.
 
@@ -102,4 +102,4 @@ After delivering the PDF, briefly confirm what was captured — include the assi
 - If the user provides several answers up front in a single message instead of interactively, extract what maps cleanly to the button options, confirm your understanding briefly, and only ask (via buttons where possible) for what's still missing — don't force the one-by-one flow when it's unnecessary.
 - If "Tipo de requerimiento" doesn't clearly match one of the three allowed values, ask the user to pick one of the three rather than guessing.
 - Button questions are a UI aid, not a hard constraint — if the user types a free-text answer instead of tapping an option, accept it and map it sensibly rather than insisting they use the buttons.
-- This skill produces two artifacts: the PDF (for the requester) and the Notion row (the shared record other DTO tools, like `projects-list`, read from). It does not create tickets, send emails, or update other external systems.
+- This skill produces two artifacts: the PDF (for the requester) and the Notion row (the shared record other DTO tools, like `list-projects`, read from). It does not create tickets, send emails, or update other external systems.
