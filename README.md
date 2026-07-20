@@ -10,7 +10,7 @@ Cuatro skills para el ciclo de trabajo del DTO:
 - **problem-definition** — entrevista estructurada para definir un problema de negocio (evidence-based, cause-free, solution-free) antes de proponer solución.
 - **demand-intake** — registra una demanda nueva, la redacta en formato corporativo y genera un PDF con marca Amcor.
 - **change-readiness-assessment** — evalúa la preparación de un equipo frente a un cambio usando el framework ADKAR, con scoring y reporte PDF.
-- **projects-list** — lee la base de Notion compartida del DTO y genera un resumen ejecutivo del portfolio de demandas.
+- **projects-list** — lee la base de Notion compartida del DTO y genera un listado simple de demandas (título, fecha de creación, owner, status y descripción de una línea).
 
 ### `lss-green-belt`
 Skills para el ciclo de trabajo de Lean Six Sigma Green Belt (DMAIC):
