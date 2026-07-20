@@ -8,8 +8,8 @@
     {
       "name": "dto-tools",
       "source": "./dto-tools",
-      "description": "Herramientas de la Digital Transformation Office (DTO) de Amcor: definición de problemas, intake de demandas, evaluación de change readiness (ADKAR) y resumen ejecutivo de proyectos.",
-      "version": "1.0.0"
+      "description": "Herramientas de la Digital Transformation Office (DTO) de Amcor: definición de problemas, intake de demandas, evaluación de change readiness (ADKAR) y resumen ejecutivo/listado de proyectos.",
+      "version": "1.1.0"
     },
     {
       "name": "lss-green-belt",
