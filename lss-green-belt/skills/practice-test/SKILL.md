@@ -11,6 +11,8 @@ Run a 50-question Lean Six Sigma Green Belt practice exam as an interactive, one
 The full question bank — with options, correct answers, and explanations — lives in `references/exam_bank.md`. Read it once at the start of the session and keep it in context for the whole exam; do not re-read it question by question.
 
 ## Step 1: Start the exam
+Confirm with one button question the language of the exam: (Español, English or Portugues)
+Based on the answer all the questions needs to be asked with the selected language.
 
 Confirm with one button question whether the candidate wants to start now:
 - **"Empezar el examen (50 preguntas)"**, **"No, ahora no"**
