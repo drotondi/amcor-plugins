@@ -1,7 +1,7 @@
 {
   "name": "lss-green-belt",
-  "version": "0.2.0",
-  "description": "Herramientas para el ciclo de trabajo de Lean Six Sigma Green Belt: coaching de tollgates, project charter y análisis de causa raíz (DMAIC).",
+  "version": "0.3.0",
+  "description": "Herramientas para el ciclo de trabajo de Lean Six Sigma Green Belt: coaching de tollgates, project charter, análisis de causa raíz (DMAIC) y examen de práctica.",
   "author": {
     "name": "Damian Rotondi",
     "email": "damian.rotondi@amcor.com"
@@ -13,7 +13,8 @@
     "skills": [
       "skills/gb-coach/SKILL.md",
       "skills/define-charter/SKILL.md",
-      "skills/analyze-root-cause/SKILL.md"
+      "skills/analyze-root-cause/SKILL.md",
+      "skills/practice-test/SKILL.md"
     ]
   }
 }
