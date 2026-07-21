@@ -6,7 +6,7 @@
     "name": "Damian Rotondi",
     "email": "damian.rotondi@amcor.com"
   },
-  "homepage": "https://github.com/drotondi/claude-plugins/tree/main/dto-tools",
+  "homepage": "https://github.com/drotondi/amcor-plugins/tree/main/dto-tools",
   "license": "UNLICENSED",
   "keywords": ["dto", "amcor", "transformacion-digital", "change-management", "adkar"],
   "components": {
