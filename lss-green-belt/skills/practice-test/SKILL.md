@@ -26,9 +26,12 @@ Right after they confirm, capture the exam start time by running `date +%s` via 
 
 For **each** of the 50 questions in `references/exam_bank.md`, in order:
 
-1. Run `date +%s` via the Bash tool again and subtract the Step 1 start timestamp to get elapsed seconds. Format elapsed and remaining time as `mm:ss` (remaining = 60:00 − elapsed, floored at 00:00) and put it on the same line as the progress bar, immediately followed on the **next line** by the question itself — no blank line, and no other text, between the two:
-   `⏱ 12:34 / 60:00 — Progreso: ███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 7/50`
-   *(question text goes here, on the line right below)*
+1. Run `date +%s` via the Bash tool again and subtract the Step 1 start timestamp to get elapsed seconds. Format elapsed and remaining time as `mm:ss` (remaining = 60:00 − elapsed, floored at 00:00) and put it on its own line together with the progress bar, then the question itself starting on a genuinely new line below it. The button/question prompt text collapses a single `\n` into the same visual line, so separate the two with a **blank line** (i.e. two newlines) — not just one — so the question always renders starting on its own new line, never glued to the end of the progress/timer text:
+   ```
+   ⏱ 12:34 / 60:00 — Progreso: ███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 7/50
+
+   (question text goes here, on its own line)
+   ```
    Translate the "Progreso" label itself (e.g. "Progress" / "Progresso"), but keep the `⏱ mm:ss / 60:00` timer format as-is in every language. Build the bar proportionally (40 characters total, filled = round(40 × current/50)). This is the closest thing to a visual progress bar available in a chat turn — do not attempt to build an HTML widget per question, it would break the one-question-per-turn flow.
    If elapsed time has already reached 60:00, do not show a new question at all — stop the exam right there and jump to Step 4, following the same handling as an early manual stop (see Notes), but tell the candidate in their chosen language that time is up (e.g. "⏱ Se acabó el tiempo (60 minutos)." / "Time's up (60 minutes)." / "O tempo acabou (60 minutos).").
 2. Translate the question stem and its options into the chosen language, preserving the exact technical meaning (numbers, formulas, and DMAIC/Six Sigma terminology should use the standard term in that language, not a literal word-for-word translation where a standard term exists). Ask the question via the button-input tool (`single_select`) using the translated options as the choices.
