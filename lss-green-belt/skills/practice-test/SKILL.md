@@ -27,7 +27,7 @@ For **each** of the 50 questions in `references/exam_bank.md`, in order:
 1. Show a plain-text progress bar as a short line before the question, e.g.:
    `Progreso: ███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 7/50` (translate the "Progreso" label itself, e.g. "Progress" / "Progresso").
    Build the bar proportionally (40 characters total, filled = round(40 × current/50)). This is the closest thing to a visual progress bar available in a chat turn — do not attempt to build an HTML widget per question, it would break the one-question-per-turn flow. 
-2. In a separate line bellow the Progress bar, Translate the question stem and its options into the chosen language, preserving the exact technical meaning (numbers, formulas, and DMAIC/Six Sigma terminology should use the standard term in that language, not a literal word-for-word translation where a standard term exists). Ask the question via the button-input tool (`single_select`) using the translated options as the choices.
+2. Translate the question stem and its options into the chosen language, preserving the exact technical meaning (numbers, formulas, and DMAIC/Six Sigma terminology should use the standard term in that language, not a literal word-for-word translation where a standard term exists). Ask the question via the button-input tool (`single_select`) using the translated options as the choices.
 3. Internally keep the mapping between each translated option shown and its original value/letter in the bank, so the candidate's tap can be checked against **Correcta** exactly — the translation is display-only and must never change which option is graded as correct.
 4. Wait for their answer. Do not ask multiple questions in the same turn.
 
