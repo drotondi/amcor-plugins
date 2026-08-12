@@ -25,7 +25,7 @@ Skills para el ciclo de trabajo de Lean Six Sigma Green Belt (DMAIC):
 ## Instalación
 
 ```
-/plugin marketplace add drotondi/amcor-plugins
+/plugin marketplace add drotondi/business-plugins
 /plugin install dto-tools@amcor-dto-marketplace
 /plugin install lss-green-belt@amcor-dto-marketplace
 ```
