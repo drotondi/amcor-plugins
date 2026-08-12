@@ -61,7 +61,7 @@ After question 50 (or an early/time-limit stop):
    - A ✓/✗ indicator styled in **green** for correct rows and **red** for incorrect rows (use actual green/red fill or text color in the PDF — this is the one place true color is possible, unlike the chat turns)
    - For incorrect rows only, the short explanation
    - A summary block at the top or bottom with the final score, percentage, and total time taken (flagged if the 60-minute limit was hit)
-   Since this is for an Amcor audience, apply the `amcor-theme` skill for colors/typography on the report chrome (headers, title page), while keeping the per-row ✓/✗ green/red exactly as specified above (that pairing is a testing-feedback convention, not a brand color, so it overrides the theme's general palette guidance for those specific cells).
+   Since this is for an Amcor audience, apply the `amcor-design` skill for colors/typography on the report chrome (headers, title page), while keeping the per-row ✓/✗ green/red exactly as specified above (that pairing is a testing-feedback convention, not a brand color, so it overrides the theme's general palette guidance for those specific cells).
 3. Save the PDF to `/mnt/user-data/outputs/` and present it with `present_files`.
 
 ## Notes
