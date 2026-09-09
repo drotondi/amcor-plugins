@@ -1,0 +1,381 @@
+{
+  "header": {
+    "eyebrow": [
+      "BUSINESS UPDATE",
+      "MASTER DATA GOVERNANCE  ·  LA FLEXIBLES"
+    ],
+    "title": "Guion de conversación — Santiago Tartara",
+    "subtitle": "Estado del programa de datos maestros  ·  Flexibles LatAm  ·  ~5 minutos",
+    "meta": "9 de septiembre de 2026   ·   Borrador — Damian Rotondi"
+  },
+  "sections": [
+    {
+      "type": "h1",
+      "num": "1",
+      "text": "Apertura"
+    },
+    {
+      "type": "say",
+      "lines": [
+        "Santiago, update de Master Data. Estamos avanzando bien. Logramos sentar a las partes técnicas de Norteamérica, cuantificamos el impacto al negocio, empezamos a armar el equipo que lo va a operar con el Shared Service Center, y tenemos la propuesta del implementador sobre la mesa. El lunes cerramos la última validación técnica."
+      ]
+    },
+    {
+      "type": "h1",
+      "num": "2",
+      "text": "Qué se destrabó"
+    },
+    {
+      "type": "lead",
+      "text": "Tres cosas se movieron estas semanas."
+    },
+    {
+      "type": "bullets",
+      "items": [
+        {
+          "label": "Sentamos a los técnicos de Norteamérica.",
+          "text": "Ramesh Vedantam, Srinivasa Velupula y Christopher Akus — los que manejan la plataforma MDG global y los que implementaron MDG en Rigids. Nos dieron su lectura y su experiencia previa."
+        },
+        {
+          "label": "Confirmaron que es factible.",
+          "text": "Srini, el especialista de MDG, confirmó por escrito que integrar MDG con Vision es técnicamente viable. Él mismo entregó una solución equivalente en EMEA Flexibles."
+        },
+        {
+          "label": "Validaron al implementador.",
+          "text": [
+            {
+              "t": "Akus sobre Kishore, de Servglobal: "
+            },
+            {
+              "t": "“one of the best in the field.”",
+              "i": true
+            },
+            {
+              "t": " Y Kishore ya nos entregó un plan detallado."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "spacer",
+      "pts": 5
+    },
+    {
+      "type": "say",
+      "lines": [
+        "Y algo importante: Lourdes está muy metida en esto. Fue ella la que abrió el canal formal con IT global y consiguió las respuestas por escrito. Carlos Laurencio también, aportando la experiencia de cómo se hizo en Rigids."
+      ]
+    },
+    {
+      "type": "h1",
+      "num": "3",
+      "text": "Dónde estamos"
+    },
+    {
+      "type": "h2",
+      "text": "3.1   Identificamos el impacto al negocio"
+    },
+    {
+      "type": "lead",
+      "text": "Esto es lo nuevo y es lo que más le va a interesar. El caso de negocio ya no es conceptual: está cuantificado."
+    },
+    {
+      "type": "kpis",
+      "items": [
+        {
+          "value": "8",
+          "label": "palancas de beneficio identificadas"
+        },
+        {
+          "value": "$3.0M+",
+          "label": "beneficio recurrente cuantificado",
+          "color": "green"
+        },
+        {
+          "value": "$160.9M",
+          "label": "de gasto analizado — Brasil 2025"
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "lines": [
+        "Corrimos un diagnóstico sobre el gasto de Brasil 2025 — 160,9 millones de dólares, siete plantas. Lo que encontramos no es una hipótesis, es evidencia."
+      ]
+    },
+    {
+      "type": "evidence",
+      "header": [
+        "Impacto al negocio",
+        "Evidencia — Brasil 2025",
+        "Valor en juego"
+      ],
+      "rows": [
+        {
+          "impact": "Capital de trabajo e integridad de inventario",
+          "evidence": "$70.3M recibidos sin entrada de mercadería; $33.7M de compromisos abiertos",
+          "value": "$36.5M",
+          "note": "pagado sin confirmación",
+          "color": "orange"
+        },
+        {
+          "impact": "Margen sobre precio de compra",
+          "evidence": "83 materiales con unidad de medida inconsistente; 49 con variación de precio superior al 20%",
+          "value": "$12.6M",
+          "note": "riesgo de sobrepago",
+          "color": "orange"
+        },
+        {
+          "impact": "Poder de negociación con proveedores",
+          "evidence": "Un mismo proveedor con múltiples IDs: $99.9M repartidos en 178 códigos de proveedor",
+          "value": "$3.2 – 8.5M",
+          "note": "oportunidad",
+          "color": "green"
+        },
+        {
+          "impact": "Costo de operar Procurement",
+          "evidence": "692 proveedores para una sola OC ($4.8M); 4.481 líneas de MRO por debajo de R$500",
+          "value": "$1.4 – 3.5M",
+          "note": "oportunidad",
+          "color": "green"
+        },
+        {
+          "impact": "Control financiero y exposición de auditoría",
+          "evidence": "100% de los servicios sin fecha de entrada de mercadería; el triple match es imposible",
+          "value": "Sin dimensionar",
+          "note": "[COMPLETAR]"
+        }
+      ]
+    },
+    {
+      "type": "say",
+      "lines": [
+        "Y el punto que quiero que te lleves: todo esto es un solo país. Brasil es uno de cinco en LatAm. La misma exposición en los otros cuatro no está medida — no está ausente.",
+        "Del otro lado, las palancas de beneficio suman más de 3 millones recurrentes: 1,5 millones en optimización de materia prima, 1,1 en mejor uso de códigos de parte y RFP, y 1 millón en reducción de inventario de MRO. Criterio conservador: contamos el beneficio solo donde el dato maestro es la causa directa y verificable."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "3.2   Diseño e inversión"
+    },
+    {
+      "type": "say",
+      "lines": [
+        "El diseño está definido: arrancamos con tres dominios — materia prima, MRO y proveedores — en un país, y después se replica al resto de LatAm. Son 28 semanas hasta la puesta en marcha.",
+        "La inversión de la primera ola está en el orden de los 440 mil dólares, precio fijo contra hitos de entrega, con la licencia a tres años incluida. Cada país adicional suma unos 75 mil.",
+        "La mitad del esfuerzo es limpieza y migración de datos, no configuración. Eso es lo correcto: gobernar datos nuevos sobre una base sucia da un sistema que el negocio no usa.",
+        "Y para ponerlo en perspectiva: contra un beneficio recurrente de más de 3 millones, la primera ola se paga en menos de seis meses."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "3.3   El equipo que lo va a operar"
+    },
+    {
+      "type": "lead",
+      "text": "Un sistema de gobierno sin equipo que lo opere es una licencia sin dueño. Esto también se movió."
+    },
+    {
+      "type": "say",
+      "lines": [
+        "Avanzamos con el Shared Service Center. Conversamos con Luis Dehrs y Kenneth, y ya hay una propuesta en construcción para montar el Hub regional de Master Data dentro del SSC.",
+        "Se propuso a Luis Espejo como Master Data Manager del Hub. Está en definición, así que te lo traigo como propuesta, no como decisión tomada.",
+        "Y se validó una recomendación de fondo: basar el equipo en Cali. El régimen de zona franca da beneficios fiscales para la exportación de servicios, así que operar el Hub desde ahí baja el costo de servir a toda la región."
+      ]
+    },
+    {
+      "type": "status_cols",
+      "left": {
+        "title": "Validado",
+        "items": [
+          "Modelo de Hub regional de Master Data operado desde el Shared Service Center.",
+          {
+            "label": "Ubicación recomendada:",
+            "text": "Cali. Zona franca — beneficio fiscal por exportación de servicios."
+          }
+        ]
+      },
+      "right": {
+        "title": "En definición",
+        "items": [
+          {
+            "label": "Master Data Manager del Hub:",
+            "text": "se propuso a Luis Espejo. Sin confirmar."
+          },
+          {
+            "label": "Estructura de soporte:",
+            "text": [
+              {
+                "t": "3 o 4 personas. Roles y perfiles "
+              },
+              {
+                "t": "[COMPLETAR]",
+                "color": "grey"
+              },
+              {
+                "t": "."
+              }
+            ]
+          },
+          [
+            {
+              "t": "Propuesta formal con el SSC, y cuantificación del beneficio fiscal "
+            },
+            {
+              "t": "[COMPLETAR]",
+              "color": "grey"
+            },
+            {
+              "t": "."
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "type": "h1",
+      "num": "4",
+      "text": "Qué falta"
+    },
+    {
+      "type": "say",
+      "lines": [
+        "Una definición de alcance. El equipo global plantea que el gobierno de proveedores podría requerir incluir también a Flexibles Norteamérica, no solo LatAm. Carlos propuso una alternativa técnica que ya usaron en Rigids y que nos permitiría avanzar sin depender de ellos.",
+        "Eso se resuelve el lunes: se sientan Kishore, Srini y Ramesh. De ahí sale si esto es un proyecto LatAm o si hay que sumar a Norteamérica."
+      ]
+    },
+    {
+      "type": "h1",
+      "num": "5",
+      "text": "Cierre"
+    },
+    {
+      "type": "say",
+      "lines": [
+        "Mi lectura es que vamos a poder avanzar solos y dejar la puerta abierta a que se sumen más adelante. Pero prefiero confirmártelo el martes con la respuesta técnica en la mano.",
+        "Si termina requiriendo a Norteamérica, ahí sí te voy a pedir que abras la puerta con tu par de AFNA."
+      ]
+    },
+    {
+      "type": "pagebreak"
+    },
+    {
+      "type": "subheader",
+      "eyebrow": "ANEXO — SOLO PARA VOS",
+      "title": "Preparación y respuestas"
+    },
+    {
+      "type": "h1",
+      "num": "A",
+      "text": "Si pregunta"
+    },
+    {
+      "type": "qa",
+      "items": [
+        {
+          "q": "¿Cuál es el retorno?",
+          "a": "Más de 3 millones recurrentes contra una primera ola de 440 mil a precio fijo. Se paga en menos de seis meses, y el beneficio se contó con criterio conservador: solo donde el dato maestro es la causa directa."
+        },
+        {
+          "q": "¿Los 36,5 millones son una pérdida?",
+          "a": "No. Es dinero que salió antes de confirmar la recepción de la mercadería — es exposición de capital de trabajo y de control, no una pérdida contable. Lo que está en juego es la confiabilidad del inventario y del proceso de pago."
+        },
+        {
+          "q": "¿Cuándo lanzamos?",
+          "a": "Con el alcance de materia prima y MRO en LatAm, 28 semanas desde la aprobación. Si entra Norteamérica, la alineación previa agrega tiempo que todavía no puedo cuantificar."
+        },
+        {
+          "q": "¿Está validado sobre Vision?",
+          "a": "Técnicamente sí, confirmado por Srini por escrito. El lunes cerramos el detalle de cómo, con Kishore en la mesa."
+        },
+        {
+          "q": "¿440 mil es caro?",
+          "a": "Precio fijo contra hitos, licencia con 75% de descuento por el compromiso de tres años. El tema abierto no es el precio, es el alcance: ese número compra un país."
+        },
+        {
+          "q": "¿Quién va a operar esto una vez implementado?",
+          "a": "Un Hub regional de Master Data dentro del Shared Service Center. La estructura son tres o cuatro personas más un manager, y la recomendación validada es basarlo en Cali por el beneficio fiscal de zona franca. Todavía estamos cerrando la propuesta con el SSC."
+        },
+        {
+          "q": "¿Y los otros cuatro países?",
+          "a": "No están medidos. El diagnóstico de Brasil es la muestra que tenemos y es el país más grande. Cada país adicional son 75 mil de implementación, sin licencia nueva."
+        }
+      ]
+    },
+    {
+      "type": "h1",
+      "num": "B",
+      "text": "Antes de la charla, cerrá"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        {
+          "label": "Qué país es la Wave 1.",
+          "text": "La propuesta dice “one country” sin nombrarlo. Es la primera pregunta que te va a hacer."
+        },
+        {
+          "label": "Licencia de SAP MDG.",
+          "text": "Los 440 mil son Servglobal. La licencia de SAP MDG es aparte y se cobra por objeto de dato gobernado — validar si la actual de Amcor cubre los objetos de Flexibles."
+        },
+        {
+          "label": "De qué presupuesto sale y quién es el project lead al 50%.",
+          "text": "Son los dos compromisos más grandes que pide la propuesta del lado de Amcor."
+        },
+        {
+          "label": "El nombramiento de Luis Espejo no está confirmado.",
+          "text": "Decilo como propuesta. Si Santiago lo repite como decidido y después cambia, el costo lo pagás vos y también Luis. Apellido de Kenneth [COMPLETAR]."
+        },
+        {
+          "label": "Cuantificar el beneficio fiscal de zona franca en Cali.",
+          "text": "Hoy es una recomendación cualitativa del SSC. Un VP va a querer el número — pedílo a Luis Dehrs antes de que te lo pregunte."
+        },
+        {
+          "label": "MDG 9.2 tiene mantenimiento hasta diciembre de 2027.",
+          "text": "Es el último release sobre ECC. Decíselo vos antes de que lo encuentre."
+        },
+        {
+          "label": "Inconsistencia de horas en la propuesta.",
+          "text": "4.096 en la página 2 contra 4.564 en la página 6. Pedile la aclaración a Kishore antes de citar horas."
+        }
+      ]
+    },
+    {
+      "type": "h1",
+      "num": "C",
+      "text": "Lo que no conviene decir en esta charla"
+    },
+    {
+      "type": "lead",
+      "text": "Material para tu conversación del lunes, no para un VP. Si pregunta por alguno, lo tenés."
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Que MDG no está en el roadmap global de Master Data Governance.",
+        "El detalle del disenso técnico entre Ramesh y Carlos.",
+        "La mecánica de grupos de cuentas de proveedor y numeración separada.",
+        "Que Lourdes considera el punto de Ramesh un blocker y duda del interés de AFNA."
+      ]
+    },
+    {
+      "type": "h1",
+      "num": "D",
+      "text": "Dos advertencias"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        {
+          "label": "Ya tomaste posición por escrito.",
+          "text": "Le dijiste a Lourdes y a Carlos que tu recomendación es avanzar por cuenta propia, antes de que el disenso técnico esté resuelto. Está bien tomar posición, pero el lunes tenés que tener razón. Si Ramesh se impone, no defiendas la posición: pivoteá rápido al escenario Américas."
+        },
+        {
+          "label": "Carlos es tu mejor argumento y también el activo que se te está yendo.",
+          "text": "Está en Procurement Excellence y su responsabilidad sobre el master data legacy es transitoria. Antes de que salga, conseguí que su alternativa técnica quede documentada y avalada por Srini, no solo en un mail suyo."
+        }
+      ]
+    }
+  ]
+}
