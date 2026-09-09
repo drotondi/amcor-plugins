@@ -5,13 +5,14 @@ Marketplace privado de plugins de Claude Code para la Digital Transformation Off
 ## Plugins disponibles
 
 ### `dto-tools`
-Seis skills para el ciclo de trabajo del DTO:
+Siete skills para el ciclo de trabajo del DTO:
 
 - **problem-definition** — entrevista estructurada para definir un problema de negocio (evidence-based, cause-free, solution-free) antes de proponer solución.
 - **demand-intake** — registra una demanda nueva, la redacta en formato corporativo y genera un PDF con marca Amcor.
 - **change-readiness-assessment** — evalúa la preparación de un equipo frente a un cambio usando el framework ADKAR, con scoring y reporte PDF.
 - **change-coach** — coach conversacional de change management: ayuda a diagnosticar y direccionar consultas puntuales usando ADKAR (adopción individual/de equipo) y el modelo de 8 pasos de Kotter (liderazgo del proceso de cambio), sin scoring ni reporte, solo guía pragmática en el chat.
 - **purpose-to-practice** — facilita (o prepara la facilitación de) un taller grupal para descubrir colectivamente el propósito de un programa o iniciativa, usando el método Purpose-to-Practice de Liberating Structures (Nine Whys, Remember the Future, anti-propósito, 1-2-4-All), con guía de facilitación y acta de propósito en PDF con marca Amcor.
+- **status-update** — convierte el estado real de un proyecto en un guion hablado de 3 a 5 minutos para reportarle a un líder senior, con entrevista estructurada, pushback obligatorio sobre el encuadre optimista del usuario, disciplina dato/supuesto/recomendación, y entregable en `.docx` con marca Amcor (más un anexo privado de preparación opcional).
 - **list-projects** — lee la base de Notion compartida del DTO y genera una tabla de portfolio de demandas (ID, iniciativa, estado, descripción de una línea).
 
 ### `lss-green-belt`

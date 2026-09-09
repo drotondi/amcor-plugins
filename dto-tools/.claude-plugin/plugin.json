@@ -1,14 +1,14 @@
 {
   "name": "dto-tools",
-  "version": "1.5.0",
-  "description": "Herramientas de la Digital Transformation Office (DTO) de Amcor: definición de problemas, intake de demandas, evaluación de change readiness (ADKAR), coaching de change management (ADKAR/Kotter), taller de propósito (Purpose-to-Practice) y listado de proyectos.",
+  "version": "1.6.0",
+  "description": "Herramientas de la Digital Transformation Office (DTO) de Amcor: definición de problemas, intake de demandas, evaluación de change readiness (ADKAR), coaching de change management (ADKAR/Kotter), taller de propósito (Purpose-to-Practice), status update ejecutivo y listado de proyectos.",
   "author": {
     "name": "Damian Rotondi",
     "email": "damian.rotondi@amcor.com"
   },
   "homepage": "https://github.com/drotondi/business-plugins/tree/main/dto-tools",
   "license": "UNLICENSED",
-  "keywords": ["dto", "amcor", "transformacion-digital", "change-management", "adkar", "kotter", "purpose-to-practice"],
+  "keywords": ["dto", "amcor", "transformacion-digital", "change-management", "adkar", "kotter", "purpose-to-practice", "status-update"],
   "components": {
     "skills": [
       "skills/problem-definition/SKILL.md",
@@ -16,6 +16,7 @@
       "skills/change-readiness-assessment/SKILL.md",
       "skills/change-coach/SKILL.md",
       "skills/purpose-to-practice/SKILL.md",
+      "skills/status-update/SKILL.md",
       "skills/list-projects/SKILL.md"
     ]
   }
